@@ -8,6 +8,7 @@ import kotlinx.coroutines.*
 import me.emig.engineEmi.*
 import me.emig.engineEmi.screenElements.canvasElements.*
 
+
 object ArrayController {
 
     lateinit var array: Array<Rechteck>
