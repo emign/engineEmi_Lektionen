@@ -1,5 +1,5 @@
+import UebungArraySortieren.*
 import me.emig.engineEmi.*
-
 
 
 /**
@@ -22,13 +22,14 @@ suspend fun main() {
         init {
             view.width = 510
             view.height = 250
+
         }
 
         /**
          * Code der VOR dem Aufbau des Views ausgeführt wird
          */
         viewWillLoad {
-
+            ArrayController.arrayErzeugen(100)
         }
 
         /**
