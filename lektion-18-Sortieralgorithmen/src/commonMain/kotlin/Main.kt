@@ -25,8 +25,8 @@ suspend fun main() {
             view.width = 510
             view.height = 250
             ArrayController.arrayErzeugen(100)
-            ArrayController.wartezeit = 120
-            ArrayController.sortieralgorithmus = QuickSort
+            ArrayController.wartezeit = 50
+            ArrayController.sortieralgorithmus = BubbleSort
             ArrayController.sortieren()
         }
 

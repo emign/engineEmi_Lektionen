@@ -4,14 +4,17 @@ import me.emig.engineEmi.screenElements.canvasElements.*
 
 object BubbleSort : Sortieralgorithmus() {
     override suspend fun sortieren(array: Array<Rechteck>) {
+        // Blauer Zeigefinger
         for (i in array.indices) {
             for (j in 0 until array.indices.last) {
                 if (array[j].hoehe.toInt() > array[j + 1].hoehe.toInt()) {
-                    array.tauscheIndexPositionen(j, j + 1)
+                    val tmp = array[j]
+                    array[j] = array[j + 1]
+                    array[j + 1] = tmp
                 }
                 ArrayController.positionenAktualisieren()
-
             }
+
         }
     }
 }

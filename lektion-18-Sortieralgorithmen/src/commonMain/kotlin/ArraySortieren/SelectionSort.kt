@@ -10,10 +10,10 @@ object SelectionSort : Sortieralgorithmus() {
             var min = array[i].hoehe.toInt()
             var minPos = i
             var j = i + 1
-            // Orangener Zeigefinger
+            // orangener Zeigefinger
             while (j < array.size) {
                 if (array[j].hoehe.toInt() < min) {
-                    // Ich habe ein neues Minimum gefunden
+                    // Neues Minimum gefunden
                     min = array[j].hoehe.toInt()
                     minPos = j
                 }
