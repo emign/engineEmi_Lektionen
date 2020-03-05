@@ -1,8 +1,5 @@
-import com.soywiz.klock.*
-import com.soywiz.korge.tween.*
 import com.soywiz.korim.color.*
 import com.soywiz.korio.async.launch
-import com.soywiz.korma.geom.*
 import kotlinx.coroutines.*
 import me.emig.engineEmi.*
 import me.emig.engineEmi.screenElements.canvasElements.*
@@ -36,9 +33,10 @@ class AnalogStoppuhr : Stoppuhr() {
                 val minuten = zeitDifferenz.minutes
 
 
+                // sekundenZeiger.rotateBy(Angle.fromDegrees(sekunden%60), 5.milliseconds)
+                sekundenZeiger.rotationDegrees = (sekunden % 60) * 6
 
-                sekundenZeiger.rotateBy(Angle.fromDegrees(sekunden % 10), 5.milliseconds)
-
+                minutenZeiger.rotationDegrees = (minuten.toInt() * 6.0)
 
             }
         }
