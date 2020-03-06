@@ -54,7 +54,7 @@ object ArrayController {
         // Tone(rechteck.hoehe*80, wartezeit)
     }
 
-    suspend fun countTausch() {
+    suspend fun countVergleich() {
         runs.text = (runs.text.toInt() + 1).toString()
     }
 }
