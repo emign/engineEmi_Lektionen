@@ -44,7 +44,6 @@ object ArrayController {
     }
 
     suspend fun positionenAktualisieren() {
-        runs.text = (runs.text.toInt() + 1).toString()
         array.forEachIndexed { index, rechteck ->
             rechteck.x = startX + (index * (breite + abstand)).toDouble()
         }
@@ -54,6 +53,10 @@ object ArrayController {
     suspend fun playSound(rechteck: Rechteck) {
         AudioTone.generate(wartezeit.milliseconds, rechteck.hoehe.toDouble() * 80).toNativeSound().playAndWait()
         // Tone(rechteck.hoehe*80, wartezeit)
+    }
+
+    suspend fun countTausch() {
+        runs.text = (runs.text.toInt() + 1).toString()
     }
 }
 
