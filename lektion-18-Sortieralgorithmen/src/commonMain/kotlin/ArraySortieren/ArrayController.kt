@@ -20,6 +20,8 @@ object ArrayController {
     private val randomSubColor: Int
         get() = (0..255).random()
 
+    private val runs = Text(10, 10, "0", 50.0, Colors.BLACK)
+
     fun arrayErzeugen(laenge: Int, untereZufallsGrenze: Int = 10, obereZufallsGrenze: Int = 100) {
         array = Array<Rechteck>(laenge) { i ->
             Rechteck(
@@ -41,6 +43,7 @@ object ArrayController {
     }
 
     suspend fun positionenAktualisieren() {
+        runs.text = (runs.text.toInt() + 1).toString()
         array.forEachIndexed { index, rechteck ->
             rechteck.x = startX + (index * (breite + abstand)).toDouble()
         }
