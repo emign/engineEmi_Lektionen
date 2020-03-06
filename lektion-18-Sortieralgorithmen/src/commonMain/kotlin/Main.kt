@@ -1,3 +1,4 @@
+import ArraySortieren.*
 import UebungArraySortieren.*
 import me.emig.engineEmi.*
 
@@ -25,8 +26,8 @@ suspend fun main() {
             view.width = 510
             view.height = 250
             ArrayController.arrayErzeugen(100)
-            ArrayController.wartezeit = 1
-            ArrayController.sortieralgorithmus = BubbleSortSchlau
+            ArrayController.wartezeit = 50
+            ArrayController.sortieralgorithmus = SelectionSort
             ArrayController.sortieren()
         }
 
