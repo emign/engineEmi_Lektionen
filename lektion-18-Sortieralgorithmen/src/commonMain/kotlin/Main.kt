@@ -25,9 +25,9 @@ suspend fun main() {
         init {
             view.width = 510
             view.height = 250
-            ArrayController.arrayErzeugen(100)
-            ArrayController.wartezeit = 50
-            ArrayController.sortieralgorithmus = SelectionSort
+            ArrayController.arrayErzeugen(10)
+            //ArrayController.wartezeit = 20
+            ArrayController.sortieralgorithmus = BogoSort
             ArrayController.sortieren()
         }
 

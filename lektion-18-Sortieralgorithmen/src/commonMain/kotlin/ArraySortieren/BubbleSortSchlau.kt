@@ -10,6 +10,7 @@ object BubbleSortSchlau : Sortieralgorithmus() {
         do {
             var getauscht = false
             for (j in 0 until array.indices.last - i) {
+                ArrayController.countVergleich()
                 if (array[j].hoehe.toInt() > array[j + 1].hoehe.toInt()) {
                     val tmp = array[j]
                     array[j] = array[j + 1]

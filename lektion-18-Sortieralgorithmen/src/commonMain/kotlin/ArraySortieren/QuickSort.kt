@@ -28,6 +28,7 @@ object QuickSort : Sortieralgorithmus() {
         val pivot = array[(left + right) / 2].hoehe.toInt() // 4) Pivot Point
         while (left <= right) {
             ArrayController.positionenAktualisieren()
+            ArrayController.countVergleich()
             while (array[left].hoehe.toInt() < pivot) left++ // 5) Find the elements on left that should be on right
 
             while (array[right].hoehe.toInt() > pivot) right-- // 6) Find the elements on right that should be on left

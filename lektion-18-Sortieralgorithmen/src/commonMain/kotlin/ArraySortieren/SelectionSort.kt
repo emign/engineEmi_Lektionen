@@ -12,6 +12,7 @@ object SelectionSort : Sortieralgorithmus() {
             var j = i + 1
             // orangener Zeigefinger
             while (j < array.size) {
+                ArrayController.countVergleich()
                 if (array[j].hoehe.toInt() < min) {
                     // Neues Minimum gefunden
                     min = array[j].hoehe.toInt()
