@@ -12,6 +12,7 @@ suspend fun main() {
 
         viewWillLoad {
 
+
             //val stoppuhr = DigitalStoppuhr()
             //register(StoppuhrController(stoppuhr))
 
