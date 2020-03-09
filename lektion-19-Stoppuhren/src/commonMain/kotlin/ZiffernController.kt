@@ -7,7 +7,6 @@ class ZiffernController(vararg val ziffer: Ziffer) : Controller {
         CoroutineScope(Dispatchers.Default).launch {
             reactAsync(event)
         }
-
     }
 
     suspend fun reactAsync(event: KeyEvent) {

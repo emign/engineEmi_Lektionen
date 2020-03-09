@@ -10,26 +10,26 @@ class Ziffer(x: Number, y: Number) : CanvasElement(x = x.toDouble(), y = y.toDou
             this.updateGraphics()
         }
 
-    val offsetX = x.toInt()
-    val offsetY = y.toInt()
-    val sH = 10 // Segmenthöhe
-    val sB = 100 // Segmentbreite
+    private val offsetX = x.toInt()
+    private val offsetY = y.toInt()
+    private val sH = 10 // Segmenthöhe
+    private val sB = 100 // Segmentbreite
 
-    val a = Segment(offsetX + sH + 0, offsetY + 0, sH, sB)
-    val b = Segment(offsetX + sH + sB, offsetY + sH, sB, sH)
-    val c = Segment(offsetX + sH + sB, offsetY + sH + sB + sH, sB, sH)
-    val d = Segment(offsetX + sH + 0, offsetY + sH + sB + sH + sB, sH, sB)
-    val e = Segment(offsetX + 0, offsetY + sH + sB + sH, sB, sH)
-    val f = Segment(offsetX + 0, offsetY + sH, sB, sH)
-    val g = Segment(offsetX + sH, offsetY + sH + sB, sH, sB)
+    private val a = Segment(offsetX + sH + 0, offsetY + 0, sH, sB)
+    private val b = Segment(offsetX + sH + sB, offsetY + sH, sB, sH)
+    private val c = Segment(offsetX + sH + sB, offsetY + sH + sB + sH, sB, sH)
+    private val d = Segment(offsetX + sH + 0, offsetY + sH + sB + sH + sB, sH, sB)
+    private val e = Segment(offsetX + 0, offsetY + sH + sB + sH, sB, sH)
+    private val f = Segment(offsetX + 0, offsetY + sH, sB, sH)
+    private val g = Segment(offsetX + sH, offsetY + sH + sB, sH, sB)
 
-    val aBck = Segment(offsetX + sH + 0, offsetY + 0, sH, sB, RGBA(240, 240, 240))
-    val bBck = Segment(offsetX + sH + sB, offsetY + sH, sB, sH, RGBA(240, 240, 240))
-    val cBck = Segment(offsetX + sH + sB, offsetY + sH + sB + sH, sB, sH, RGBA(240, 240, 240))
-    val dBck = Segment(offsetX + sH + 0, offsetY + sH + sB + sH + sB, sH, sB, RGBA(240, 240, 240))
-    val eBck = Segment(offsetX + 0, offsetY + sH + sB + sH, sB, sH, RGBA(240, 240, 240))
-    val fBck = Segment(offsetX + 0, offsetY + sH, sB, sH, RGBA(240, 240, 240))
-    val gBck = Segment(offsetX + sH, offsetY + sH + sB, sH, sB, RGBA(240, 240, 240))
+    private val aBck = Segment(offsetX + sH + 0, offsetY + 0, sH, sB, RGBA(240, 240, 240))
+    private val bBck = Segment(offsetX + sH + sB, offsetY + sH, sB, sH, RGBA(240, 240, 240))
+    private val cBck = Segment(offsetX + sH + sB, offsetY + sH + sB + sH, sB, sH, RGBA(240, 240, 240))
+    private val dBck = Segment(offsetX + sH + 0, offsetY + sH + sB + sH + sB, sH, sB, RGBA(240, 240, 240))
+    private val eBck = Segment(offsetX + 0, offsetY + sH + sB + sH, sB, sH, RGBA(240, 240, 240))
+    private val fBck = Segment(offsetX + 0, offsetY + sH, sB, sH, RGBA(240, 240, 240))
+    private val gBck = Segment(offsetX + sH, offsetY + sH + sB, sH, sB, RGBA(240, 240, 240))
 
     init {
 

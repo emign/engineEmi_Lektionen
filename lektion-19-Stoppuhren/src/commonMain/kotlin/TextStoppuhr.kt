@@ -1,24 +1,15 @@
 import me.emig.engineEmi.screenElements.canvasElements.*
 
 class TextStoppuhr : Stoppuhr() {
-    val hundertstelText = Text(500, 100, "00", 100.0)
-    val sekundenText = Text(300, 100, "00", 100.0)
-    val minutenText = Text(100, 100, "00", 100.0)
-
+    val hundertstelText: Text = TODO()
+    val sekundenText: Text = TODO()
+    val minutenText: Text = TODO()
 
     init {
-        addChild(hundertstelText)
-        addChild(sekundenText)
-        addChild(minutenText)
+        TODO()
     }
 
     override suspend fun onEveryFrame() {
-
-        hundertstelText.text = (hunderdstel % 100).toInt().toString()
-        sekundenText.text = (sekunden % 60).toInt().toString()
-        minutenText.text = (minuten % 100).toInt().toString()
-
+        TODO()
     }
-
-
 }
