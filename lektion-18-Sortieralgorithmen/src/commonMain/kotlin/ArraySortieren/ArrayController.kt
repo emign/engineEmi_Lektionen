@@ -8,6 +8,7 @@ import kotlinx.coroutines.*
 import me.emig.engineEmi.*
 import me.emig.engineEmi.screenElements.canvasElements.*
 
+
 object ArrayController {
 
     lateinit var array: Array<Rechteck>
@@ -33,6 +34,7 @@ object ArrayController {
             ).apply { this.rotationDegrees = 180.0 }
         }
         engine.register(array)
+        engine.register(runs)
     }
 
     fun sortieren() {
