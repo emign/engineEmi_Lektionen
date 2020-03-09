@@ -16,12 +16,11 @@ abstract class Stoppuhr : CanvasElement() {
 
     // Zeitstempel in Millisekunden
     // Wird bei jedem Aufruf aktualisiert
-    val jetzt: Double
+    private val jetzt: Double
         get() {
             return DateTime.now().unixMillis
         }
 
-    var pausenZeit = 0.0
 
     // ZeitDifferenz in Millisekunden
     val zeitDifferenz: TimeSpan
@@ -30,7 +29,7 @@ abstract class Stoppuhr : CanvasElement() {
         }
 
     // Startpunkt der Messung
-    var startZeit = 0.0
+    private var startZeit = 0.0
 
     fun start() {
         start(jetzt)
