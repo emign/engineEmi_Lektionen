@@ -12,7 +12,8 @@ suspend fun main() {
 
         viewWillLoad {
 
-            //val stoppuhr = DigitalStoppuhr()
+
+        //val stoppuhr = DigitalStoppuhr()
             //register(StoppuhrController(stoppuhr))
 
 
@@ -22,7 +23,6 @@ suspend fun main() {
             val stoppKnopf = TextButton(x = 50, y = 200, breite = 50, text = "Stop") {
                 stoppuhr.stop()
             }
-
 
             register(TextButton(50, 100, 50, 32, "Start") {
                 stoppuhr.start()

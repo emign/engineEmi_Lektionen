@@ -33,9 +33,13 @@ abstract class Stoppuhr : CanvasElement() {
     var startZeit = 0.0
 
     fun start() {
+        start(jetzt)
+    }
+
+    fun start(zeit: Double) {
         misst = true
         pause = false
-        startZeit = jetzt
+        startZeit = zeit
         refreshTimeLoop()
     }
 
