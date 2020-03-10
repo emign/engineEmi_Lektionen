@@ -24,6 +24,7 @@ object ArrayController {
     private val runs = Text(10, 10, "0", 50.0, Colors.BLACK)
 
     fun arrayErzeugen(laenge: Int, untereZufallsGrenze: Int = 10, obereZufallsGrenze: Int = 100) {
+
         array = Array<Rechteck>(laenge) { i ->
             Rechteck(
                     x = startX + (i * (breite + abstand)),
