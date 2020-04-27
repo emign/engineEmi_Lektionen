@@ -24,5 +24,4 @@ class Kino {
 
 }
 
-class Sitzplatz(var reihe: Char = 'A', var nummer: Byte = 1) {
-}
+class Sitzplatz(var reihe: Char = 'A', var nummer: Byte = 1)

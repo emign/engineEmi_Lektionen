@@ -1,5 +1,6 @@
-import com.soywiz.korge.tests.*
-import kotlin.test.*
+import com.soywiz.korge.tests.KorgeTest
+import kotlin.test.Test
+import kotlin.test.assertEquals
 
 class KinoTest : KorgeTest() {
 
@@ -91,8 +92,8 @@ class KinoTest : KorgeTest() {
         val ersterSitzPlatz = kino.ersterSitzPlatzLeer()
         var s = ""
         if (ersterSitzPlatz is Sitzplatz) {
-            s += ersterSitzPlatz?.reihe.toString()
-            s += ersterSitzPlatz?.nummer.toString()
+            s += ersterSitzPlatz.reihe.toString()
+            s += ersterSitzPlatz.nummer.toString()
         } else {
             s = ersterSitzPlatz.toString()
         }
@@ -106,8 +107,8 @@ class KinoTest : KorgeTest() {
         val ersterSitzPlatz = kino.ersterSitzPlatzLeer()
         var s = ""
         if (ersterSitzPlatz is Sitzplatz) {
-            s += ersterSitzPlatz?.reihe.toString()
-            s += ersterSitzPlatz?.nummer.toString()
+            s += ersterSitzPlatz.reihe.toString()
+            s += ersterSitzPlatz.nummer.toString()
         } else {
             s = ersterSitzPlatz.toString()
         }
@@ -121,8 +122,8 @@ class KinoTest : KorgeTest() {
         val ersterSitzPlatz = kino.ersterSitzPlatzLeer()
         var s = ""
         if (ersterSitzPlatz is Sitzplatz) {
-            s += ersterSitzPlatz?.reihe.toString()
-            s += ersterSitzPlatz?.nummer.toString()
+            s += ersterSitzPlatz.reihe.toString()
+            s += ersterSitzPlatz.nummer.toString()
         } else {
             s = ersterSitzPlatz.toString()
         }
@@ -136,8 +137,8 @@ class KinoTest : KorgeTest() {
         val ersterSitzPlatz = kino.ersterSitzPlatzLeer()
         var s = ""
         if (ersterSitzPlatz is Sitzplatz) {
-            s += ersterSitzPlatz?.reihe.toString()
-            s += ersterSitzPlatz?.nummer.toString()
+            s += ersterSitzPlatz.reihe.toString()
+            s += ersterSitzPlatz.nummer.toString()
         } else {
             s = ersterSitzPlatz.toString()
         }
@@ -151,8 +152,8 @@ class KinoTest : KorgeTest() {
         val ersterSitzPlatz = kino.ersterSitzPlatzLeer()
         var s = ""
         if (ersterSitzPlatz is Sitzplatz) {
-            s += ersterSitzPlatz?.reihe.toString()
-            s += ersterSitzPlatz?.nummer.toString()
+            s += ersterSitzPlatz.reihe.toString()
+            s += ersterSitzPlatz.nummer.toString()
         } else {
             s = ersterSitzPlatz.toString()
         }
